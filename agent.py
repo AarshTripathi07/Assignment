@@ -1,6 +1,6 @@
 """
 Super Investing · AI Research Agent
-Author: AI Innovator Assignment Part B
+Author: Aarsh Tripathi
 Anchor Date: 2026-09-23
 Target Entity: Sarvottam Cables Ltd (NSE: SRVCABLE)
 """

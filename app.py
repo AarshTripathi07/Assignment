@@ -315,8 +315,8 @@ def get_dashboard_html():
       <div class="nav-tabs">
         <button class="tab-btn active" onclick="switchTab('briefTab', this)">Generated Research Brief</button>
         <button class="tab-btn" onclick="switchTab('auditTab', this)">Agent Reasoning Log</button>
-        <button class="tab-btn" onclick="switchTab('rawTab', this)">Raw Markdown (Copy for Submission)</button>
-        <button class="tab-btn" onclick="switchTab('testlogTab', this)">Test Log & Iteration History</button>
+        <button class="tab-btn" onclick="switchTab('rawTab', this)">Raw Markdown View</button>
+        <button class="tab-btn" onclick="switchTab('testlogTab', this)">System Test Log</button>
       </div>
 
       <!-- Tab 1: Rendered Brief -->
@@ -325,7 +325,7 @@ def get_dashboard_html():
           <span style="font-size: 12px; color: var(--text-muted);">Audited retail research brief · ~1 page format</span>
           <button class="btn btn-secondary" onclick="copyBriefText()" style="font-size: 12px; padding: 6px 12px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            Copy Markdown to Clipboard
+            Copy Markdown
           </button>
         </div>
         <div id="briefContent" class="brief-render">Loading research brief...</div>
@@ -335,7 +335,7 @@ def get_dashboard_html():
       <div id="auditTab" style="display:none;">
         <h4 style="font-size: 14px; margin-bottom: 8px; color: #a5b4fc;">Live Agent Cognitive Pipeline & Audit Trace</h4>
         <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">
-          Demonstrating <strong>how the agent thinks</strong>: Untrusted prompt injection quarantine, entity resolution disambiguation, and financial cross-auditing.
+          Autonomous reasoning trace: Untrusted prompt injection quarantine, entity resolution disambiguation, and financial cross-auditing.
         </p>
         <div id="auditLog" class="log-terminal">Run analysis to stream agent thinking trace...</div>
       </div>
@@ -343,8 +343,8 @@ def get_dashboard_html():
       <!-- Tab 3: Raw Markdown -->
       <div id="rawTab" style="display:none;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-          <span style="font-size: 12px; color: var(--text-muted);">Use this exact Markdown text to paste into your submission form</span>
-          <button class="btn btn-secondary" onclick="copyRawText()" style="font-size: 12px; padding: 6px 12px;">Copy</button>
+          <span style="font-size: 12px; color: var(--text-muted);">Clean Markdown source ready for export or report distribution</span>
+          <button class="btn btn-secondary" onclick="copyRawText()" style="font-size: 12px; padding: 6px 12px;">Copy Markdown</button>
         </div>
         <textarea id="rawBrief" class="raw-textarea" readonly></textarea>
       </div>

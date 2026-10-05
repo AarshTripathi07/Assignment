@@ -1,7 +1,8 @@
-# Super Investing · AI Research Agent Test Log
+# Super Investing · AI Research Agent Test & Iteration Log
+**Author:** Aarsh Tripathi  
 **Ticker:** NSE: SRVCABLE (Sarvottam Cables Ltd)  
-**Evaluation Date:** 23 September 2026  
-**Assignment Requirement:** Run the agent at least 3 times, changing prompt/design between runs, documenting failures and evolutions.
+**Anchor Date:** 23 September 2026  
+**Overview:** Detailed development record documenting prompt engineering evolutions, edge-case failure modes, and architectural fixes across iterations.
 
 ---
 
