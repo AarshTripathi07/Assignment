@@ -1,0 +1,7 @@
+# Super Investing · AI Research Agent
+# Standard library runs out-of-the-box with zero pip packages required!
+# Optional packages for cloud LLM APIs:
+requests>=2.31.0
+google-genai>=0.1.0
+openai>=1.12.0
+python-dotenv>=1.0.0
