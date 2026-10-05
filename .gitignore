@@ -10,6 +10,10 @@ env/
 venv/
 ENV/
 
+# Media / Video files
+*.mp4
+*.wav
+
 # IDE files
 .vscode/
 .idea/
