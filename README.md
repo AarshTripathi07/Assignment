@@ -109,11 +109,3 @@ Real-world scraped web data contains noisy, outdated, and adversarial content. I
 ├── requirements.txt          # Optional packages for cloud LLM APIs
 └── README.md                 # Project Architecture & Documentation
 ```
-
----
-
-## 🎥 Walkthrough Video Outline
-
-- **Execution Demo (0:00 – 1:00):** Show `python app.py` running in browser with the 8 classified documents and trigger the multi-phase audit pipeline.
-- **Design Decision (1:00 – 2:00):** Walk through the **Source Credibility Hierarchy & Discrepancy Auditing**—highlighting how the agent detected the media revenue typo (₹1,428 cr vs official ₹1,248 cr) and resolved the promoter pledge timeline (35% in 2024 to 4.1% in 2026).
-- **Limitation (2:00 – 2:45):** Discuss how complex nested accounting footnotes in scanned PDF filings currently require pre-extracted markdown, which can be expanded in future versions using multi-modal table extraction models.
